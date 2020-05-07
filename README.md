@@ -6,7 +6,9 @@
 This is a centralized object store that works in the browser and nodejs.
 # installing
 `npm install @hrimsoft/utils --save`
+
 or
+
 `yarn add @hrimsoft/utils`
 # usage
 ## Checking arguments on null, white space or empty arrays
@@ -21,7 +23,7 @@ _.isNotNull('  '); // false; it's more readable than if(!_.isNull('   '))...
 _.isNull([]); // true
 ```
 ## Checking callback functions before calling them
-```
+```javascript
 import _ from '@hrimsoft/utils';
 // or
 // const _ = require('@hrimsoft/utils').default
@@ -40,7 +42,7 @@ const obj = {
 _.isFunction('prop.method', obj)); // true
 ```
 ## Casting to numbers
-```
+```javascript
 import _ from '@hrimsoft/utils';
 // or
 // const _ = require('@hrimsoft/utils').default
@@ -51,7 +53,7 @@ _.toNumber(true); // 1
 _.toNumber(['1',false, '-12.3']); // [1,0,-12.3]
 ```
 ## Casting to boolean
-```
+```javascript
 import _ from '@hrimsoft/utils';
 // or
 // const _ = require('@hrimsoft/utils').default
