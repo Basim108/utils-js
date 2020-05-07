@@ -148,8 +148,11 @@
             case 'number'   :
                 return value !== 0;
             case 'object'   :
-                if (Array.isArray(value))
-                    return value.map(item => this.toBool(item))
+                if (Array.isArray(value)) {
+                    return value.length
+                        ? value.map(item => this.toBool(item))
+                        : false;
+                }
 
                 return value !== null;
             case 'undefined':

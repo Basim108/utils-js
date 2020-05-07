@@ -201,9 +201,12 @@ var Utils = /*#__PURE__*/function () {
           return value !== 0;
 
         case 'object':
-          if (Array.isArray(value)) return value.map(function (item) {
-            return _this.toBool(item);
-          });
+          if (Array.isArray(value)) {
+            return value.length ? value.map(function (item) {
+              return _this.toBool(item);
+            }) : false;
+          }
+
           return value !== null;
 
         case 'undefined':
