@@ -12,7 +12,7 @@ or
 `yarn add @hrimsoft/utils`
 # usage
 ## Checking arguments on null, white space or empty arrays
-```
+```javascript
 import _ from '@hrimsoft/utils';
 // or
 // const _ = require('@hrimsoft/utils').default
