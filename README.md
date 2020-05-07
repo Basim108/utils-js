@@ -3,7 +3,6 @@
 ![npm](https://img.shields.io/npm/v/@hrimsoft/utils)
 ![npm](https://img.shields.io/npm/dy/@hrimsoft/utils)
 
-This is a centralized object store that works in the browser and nodejs.
 # installing
 `npm install @hrimsoft/utils --save`
 
